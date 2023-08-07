@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/52f3957177.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/styles.css">
+  <title>Formulario de Registro</title>
+</head>
+<body >
+    <header class="home__header">
+        <div class="home__header__box--logo">
+            <a href="/">
+                <img class="home__header--logo" src="/images/logo-mercado-liebre.svg" 
+                alt="logo_mercado_liebre">
+            </a>
+        </div>
+        <div class="home__header--search">
+        
+        <div class="home__header--search-input">
+            <input  type="text" placeholder="Buscar productos, marcas">
+        </div>
+            
+            <a href="" class="home__header--search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </a>
+        </div>
+        <div class="home__header__title">
+            <i class="fa-solid fa-hand-holding-dollar"></i>
+            <h1>Compra en cuotas sin tarjeta de credoto</h1>
+        </div>
+        <div class="home__header__box--menu">
+            <ul>
+                <li><a href="#Ofertas">Ofertas</a></li>
+                <li><a href="#Tiendas">Tiendas Oficiales</a></li>
+                <li><a href="#Vender">Vender</a></li>
+                <li><a href="#Ayuda">Ayuda</a></li>
+            </ul>
+        </div>
+        <nav class="home__header__nav--menu">
+            <ul>
+                <li><a href="#">Creá tu cuenta <i class="fa-solid fa-address-card"></i></a></li>
+                <li><a href="/login">Ingresá <i class="fa-solid fa-right-to-bracket"></i></a></li>
+                <li><a href="#">Mis compras <i class="fa-sharp fa-solid fa-basket-shopping"></i></a></li>
+            </ul>
+        </nav>
+        <div class="home__header__box--burger-menu">
+            <i class="fas fa-bars"></i>
+        </div>
+    </header>
+    <div class="register">
+        <div class="register-container">
+          <h2>Formulario de Registro</h2>
+          <form action="" method="">
+            <div class="form-group">
+              <input type="text" id="nombre" name="nombre" required placeholder="Nombre y Apellido">
+            </div>
+            <div class="form-group">
+              <input type="text" id="usuario" name="usuario" required placeholder="Nombre de Usuario">
+            </div>
+            <div class="form-group">
+              <label for="fecha">Fecha de Nacimiento:</label>
+              <input type="date" id="fecha" name="fecha" required>
+            </div>
+            <div class="form-group">
+              <input type="text" id="domicilio" name="domicilio" required placeholder="Domicilio">
+            </div>
+            <div class="form-group">
+              <label>Perfil del Usuario:</label>
+              <div class="radio-group">
+                <label>
+                  <input type="radio" name="perfil" value="comprar" required> Comprar
+                </label>
+                <label>
+                  <input type="radio" name="perfil" value="vender" required> Vender
+                </label>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="categories-label">Categorías de Interés:</label>
+              <label><input type="checkbox" name="categorias[]" value="Electro"> Electro</label>
+              <label><input type="checkbox" name="categorias[]" value="Moda"> Moda</label>
+              <label><input type="checkbox" name="categorias[]" value="Hogar"> Hogar</label>
+              <label><input type="checkbox" name="categorias[]" value="Juguetería"> Juguetería</label>
+              <label><input type="checkbox" name="categorias[]" value="Vida Sana"> Vida Sana</label>
+            </div>
+            <div class="form-group">
+              <label for="foto">Foto de Usuario:</label>
+              <input type="file" id="foto" name="foto">
+            </div>
+            <div class="form-group">
+              <input type="password" id="contrasena" name="contrasena" required placeholder="Contraseña">
+            </div>
+            <div class="form-group">
+              <input type="password" id="confirmar-contrasena" name="confirmar-contrasena" required placeholder="Confirmar Contraseña">
+            </div>
+            <button type="submit" class="btn">Enviar</button>
+            <button type="reset" class="btn">Borrar Datos</button>
+          </form>
+        </div>
+    </div>
+</body>
+</html>

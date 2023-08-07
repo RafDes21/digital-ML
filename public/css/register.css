@@ -1,0 +1,40 @@
+
+    .register-container {
+      max-width: 500px;
+      border-radius: 10px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: var( --color-GrisClaro);
+    }
+    .register .register-container .form-group {
+      margin: 20px 0;
+    }
+    .register .register-container .radio-group{
+      display: flex;
+      justify-content: space-between;
+    }
+    .register .register-container label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    .register .register-container input, select {
+      width: 100%;
+      padding: 10px 8px;
+      border: none;
+      border-radius: 5px;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: var(--color-Celeste);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .categories-label {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  
