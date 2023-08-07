@@ -185,7 +185,9 @@
 }
 
 /* -------- footer -------- -------- */
-
+.home__footer-section{
+  display: flex;
+}
 .home__footer__article {
   text-align: center;
   padding: 30px;
@@ -195,6 +197,10 @@
   font-size: 2rem;
   color: var(--color-Celeste);
   margin-bottom: 10px;
+}
+
+.home__footer__article i:hover{
+  color: #0022AA;
 }
 
 .home__footer__article__icon-title {
@@ -323,6 +329,7 @@
   }
 
   /* footer */
+
 }
 @media (min-width: 1024px) {
   /* header */
