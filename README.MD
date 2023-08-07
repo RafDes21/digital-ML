@@ -9,3 +9,5 @@
 [Flexbox](https://github.com/RafDes21/digital-ML/tree/flexbox)
 
 [Formulario](https://github.com/RafDes21/digital-ML/tree/formulario)
+
+[Animaciones](https://github.com/RafDes21/digital-ML/tree/animaciones)
