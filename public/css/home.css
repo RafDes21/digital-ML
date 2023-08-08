@@ -25,6 +25,22 @@
   font-size: 20px;
   gap: 5px;
 }
+.home__main__section__truck {
+  text-align: end;
+}
+
+.home__main__section__truck i {
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #39b54a;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #39b54a;
+  right: 20px;
+}
+
 .home__header__title h1 {
   font-size: 20px;
 }
@@ -122,8 +138,12 @@
 
 .home__main__section__article {
   margin: 5px;
-  padding: 0 10px;
   background-color: white;
+  border: 1px solid var(--color-borde-gris);
+  border-radius: 5px;
+}
+
+.home__main__section__article:hover {
   box-shadow: 0px 0px 5px rgb(100, 100, 100);
 }
 
@@ -132,7 +152,30 @@
 }
 .home-price__descuent {
   display: flex;
+  padding: 20px 0 0 20px;
 }
+.home__main__section__article--box {
+  position: relative;
+  border-bottom: 2px solid var(--color-borde-gris);
+}
+.home__main__section__article--box i {
+  font-size: 16px;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid var(--color-Verde);
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  right: 20px;
+  bottom: -15px;
+  color: var(--color-Verde);
+}
+
+.home__main__section__article--box i:hover {
+  transform: rotate(-90deg);
+}
+
 .home__main__section__article--box-p {
   border-top: 1px solid var(--color-borde-gris);
   padding: 15px;
@@ -172,10 +215,17 @@
 
 .home__main__section__article--product {
   font-size: var(--size-Descripciones);
-  color: var(--color-GrisOscuro);
+  color:transparent;
   font-weight: 700;
   font-size: var(--size-Titulares);
-  margin: 10px 0;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  padding-top: 10px;
+  
+}
+.home__main__section__article:hover .home__main__section__article--product{
+  color: var(--color-GrisOscuro);
+
 }
 
 .home__main__section--title-offers {
@@ -185,7 +235,7 @@
 }
 
 /* -------- footer -------- -------- */
-.home__footer-section{
+.home__footer-section {
   display: flex;
 }
 .home__footer__article {
@@ -199,8 +249,8 @@
   margin-bottom: 10px;
 }
 
-.home__footer__article i:hover{
-  color: #0022AA;
+.home__footer__article i:hover {
+  color: #0022aa;
 }
 
 .home__footer__article__icon-title {
@@ -317,19 +367,17 @@
   /* main */
 
   .home__main__section__article {
-    box-shadow: 0px 0px 10px rgb(100, 100, 100);
     width: 45%;
     margin: 17px;
   }
 
   .home__main__section__article--product {
     font-size: var(--size-Descripciones);
-    display: block;
-    padding-top: 20px;
+ 
+
   }
 
   /* footer */
-
 }
 @media (min-width: 1024px) {
   /* header */
